@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
+  <title>Growthmind - Login</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f8f9fa;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .btn-custom {
+      background-color: #93f98c;
+      color: #262626;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #efefef;
+      color: #262626;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <div class="text-center mb-4">
+    <img src="imagens/Logo - Growthmind - Header.png" alt="Growthmind Logo" width="120">
+  </div>
+  <form onsubmit="handleLogin(event)">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha</label>
+      <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+    </div>
+    <button type="submit" class="btn btn-custom btn-block">Entrar</button>
+    <p class="text-center mt-3">
+      <a href="#">Esqueceu sua senha?</a>
+    </p>
+    <p class="text-center">
+      Não tem uma conta? <a href="#">Cadastre-se</a>
+    </p>
+  </form>
+</div>
+
+<script>
+  // Função para lidar com o redirecionamento
+  function handleLogin(event) {
+    event.preventDefault(); // Previne o envio padrão do formulário
+    window.location.href = 'dashboard.html'; // Redireciona para a página do dashboard
+  }
+</script>
+
+</body>
+</html>
